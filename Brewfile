@@ -1,86 +1,112 @@
-tap "drone/drone"
-tap "heroku/brew"
-tap "homebrew/bundle"
-tap "homebrew/cask"
+###################################
+# Add custom taps
+###################################
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/services"
-tap "wix/brew"
-brew "aws-iam-authenticator"
+
+###################################
+# Install applications via Homebrew
+###################################
+
+# Essentials
 brew "brew-cask-completion"
-brew "cheat"
-brew "gcc"
 brew "git"
 brew "git-extras"
-brew "python"
-brew "gnupg", link: false
-brew "go"
-brew "httpie"
-brew "imagemagick"
-brew "jq"
-brew "kubernetes-cli", link: false
-brew "lastpass-cli"
-brew "mas"
-brew "mysql"
-brew "nmap"
-brew "nvm"
-brew "openvpn", restart_service: true
-brew "packer"
-brew "pidcat"
-brew "ruby-build"
-brew "rbenv"
-brew "shellcheck"
-brew "swi-prolog"
-brew "terraform"
-brew "thefuck"
-brew "tmux"
-brew "tree"
-brew "vault"
-brew "watchman"
-brew "wget"
 brew "yarn"
-brew "z"
+
+# ZSH specific
 brew "zsh"
-brew "zsh-autosuggestions"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
-brew "drone/drone/drone"
-brew "heroku/brew/heroku"
-cask "alfred"
-cask "android-platform-tools"
-cask "android-studio"
-cask "atom"
-cask "aws-vault"
-cask "betterzip"
-cask "docker"
-cask "filezilla"
-cask "google-cloud-sdk"
-cask "gpg-suite"
-cask "java8"
+
+# Manage node
+brew "n"
+
+# Manage ruby
+brew "rbenv"
+
+# Unix utilities
+brew "tree"
+brew "wget"
+
+# Utilities
+brew "cheat"
+brew "gpg"
+# brew "httpie"
+brew "mycli"
+# brew "nmap"
+brew "openssl"
+brew "python3"
+brew "thefuck"
+# brew "wrk"
+
+# Native dev
+# brew "pidcat"
+# brew "watchman"
+
+###################################
+# Install applications via Cask
+###################################
+
+# Essentials
+cask "iterm2"
 cask "lastpass"
-cask "opensim"
-cask "postman"
-cask "qlcolorcode"
-cask "qlimagesize"
-cask "qlmarkdown"
-cask "qlstephen"
-cask "qlvideo"
-cask "quicklook-csv"
-cask "quicklook-json"
-cask "quicklookase"
-cask "react-native-debugger"
-cask "spectacle"
-cask "suspicious-package"
-cask "the-unarchiver"
+cask "sequel-pro"
+cask "station"
 cask "toggl"
 cask "tunnelblick"
-cask "vagrant"
-cask "vagrant-manager"
-cask "virtualbox"
-cask "vlc"
+
+# Virtual Machines
+# cask "vagrant"
+# cask "vagrant-manager"
+# cask "virtualbox"
+
+# Native dev
+# cask "android-studio"
+# cask "android-platform-tools"
+# cask "java" # java 7
+# cask "java8"
+
+# Browsers
+# cask "firefox"
+# cask "firefox-developer-edition"
+cask "google-chrome"
+
+# Editors
+# cask "atom"
+# cask "phpstorm"
+# cask "sublime-text"
+# cask "visual-studio-code"
+# cask "webstorm"
+
+# Quick Look
+cask "qlcolorcode"
+cask "qlstephen"
+cask "qlmarkdown"
+cask "quicklook-csv"
+cask "quicklook-json"
+cask "qlimagesize"
 cask "webpquicklook"
-mas "Apple Configurator 2", id: 1037126344
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
+cask "suspicious-package"
+cask "quicklookase"
+cask "qlvideo"
+cask "betterzip"
+
+# Fonts
+cask "font-awesome-terminal-fonts"
+
+# Utilities
+# cask "alfred"
+cask "docker"
+# cask "etcher"
+cask "flux"
+# cask "google-backup-and-sync"
+cask "gpg-suite"
+cask "postman"
+# cask "skype"
+# cask "skitch"
+# cask "slack"
+cask "spectacle"
+# cask "spotify"
+cask "the-unarchiver"
+cask "vlc"
